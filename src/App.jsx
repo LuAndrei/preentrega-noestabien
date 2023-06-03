@@ -3,16 +3,28 @@ import { useState } from 'react'
 
 import './App.css'
 
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+	
     <>
     
+	<div class="sidebar">
+      <div class="profile_info">
+        
+        
+      </div>
+      <a href="#"><i class="fas fa-desktop"></i><span>Inicio</span></a>
    
-		
+      <a href="#"><i class="fas fa-info-circle"></i><span>Contactanos</span></a>
+      <a href="#"><i class="fas fa-sliders-h"></i><span>Suscribite</span></a>
+    </div>
+	
 	
 		<header>
+			
 			<h1>Art Attack</h1>
 
 			<div class="container-icon">
@@ -131,7 +143,7 @@ function App() {
 			</div>
 		</div>
     </>
-  )
-}
+  );
+};
 
 export default App
